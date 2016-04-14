@@ -7,6 +7,71 @@
     position: fixed;
     left: -15.625em; /*or width of your navigation panel*/
     width: 15.625em; /*should match the above value*/
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.panel, .push {
+    -webkit-transition: all 300ms ease; /*set your prefered speed here*/
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.panel.open {
+    left: 0;
+}
+
+.panel.closed {
+
+}
+
+.panel.semiOpen {
+    left: 0;
+    width: 4em; /*set the prefered semiOpen width*/
+}
+
+.panel.semiOpen .hiddenThin {
+    display: none;
+}
+
+
+.wrap.open {
+
+}
+
+.wrap.closed {
+
+}
+
+.wrap.semiOpen {
+    left: 4em;
+}
+
+.shrink.open {
+    width: calc(100% - 15.625em);
+}
+
+.shrink.closed {
+    width: 100%;
+}
+
+.shrink.semiOpen {
+    width: calc(100% - 4em);
+}
+
+.push.open {
+    left: 15.625em;
+}
+
+.push.closed {
+    left: 0;
+}
+
+.push.semiOpen {
+
 }
 
 /*
